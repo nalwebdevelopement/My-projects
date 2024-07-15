@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mini Calendar</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <div class="hero">
+            <div class="calender">
+                <div class="left">
+                    <p id="date">01</p>
+                    <p id="day">Sunday</p>
+
+                </div>
+                <div class="right">
+                    <p id="month">January</p>
+                    <p id = "year">2024</p>
+
+                </div>
+            </div>
+        </div>
+       <script>
+            const date =document.getElementById("date");
+            const day =document.getElementById("day");
+            const month =document.getElementById("month");
+            const year =document.getElementById("year");
+
+            const today = new Date();
+            const weekDays = ["sunday","Monday","Tuesday","Wednesday","Thurday","Friday","Saturday"]
+            const allmonths =["January","February","March","April","May","June","July","August","September","October","November","December"]
+
+            date.innerHTML = (today.getDate() <10 ? "0":"" ) + today.getDate();
+            day.innerHTML= weekDays[today.getDay()];
+            month.innerHTML = allmonths[today.getMonth()];
+            year.innerHTML = today.getFullYear();
+            
+       </script>
+    </body>
+</html>
