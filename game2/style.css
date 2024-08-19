@@ -1,0 +1,27 @@
+body
+{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(94,94,170,1) 81%, rgba(0,212,255,1) 100%);
+background-image: linear-gradient( 99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8% );
+
+color:azure
+}
+.game-container
+{
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+justify-content: space-between;
+ display:flex; 
+align-items: center;
+margin: auto;
+margin-top: 10%;
+
+width: 80vw;
+height: 70vh;
+background-image: url("https://static.vecteezy.com/system/resources/thumbnails/028/441/063/small/a-black-background-with-stars-and-a-lot-of-white-stars-generative-ai-photo.jpg");
+
+}
+.alienimage
+{
+    display: inline-block;
+}
